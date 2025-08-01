@@ -20,14 +20,15 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.napnetworks.nap_networks_app"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
+        applicationId = "com.napnetworks.app"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+
+        manifestPlaceholders = [
+            "google_sign_in_sha1": "33:5A:21:E8:43:D7:E3:C8:F5:1C:70:34:BA:F6:D6:B6:02:F4:D5:8D"
+        ]
     }
 
     buildTypes {
